@@ -6,6 +6,7 @@
   display: grid;
   //grid-template-columns: repeat(3, 1fr);
   // Auto fit creates as many columns as can fit with our defined width
+  // Which here is the between minmax(25rem, 1fr)
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
   align-items: start;
