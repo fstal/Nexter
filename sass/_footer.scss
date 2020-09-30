@@ -2,3 +2,29 @@
   background-color: $color-secondary;
   grid-column: full-start / full-end;
 }
+
+.nav {
+  list-style: none;
+  padding: 10rem 0;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: #fff;
+    font-family: $font-display;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, 0.05);
+    transform: translateY(-3px);
+  }
+}
