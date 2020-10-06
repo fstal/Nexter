@@ -7,14 +7,27 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
-
     align-items: center;
     margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+      margin: 3rem 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 5rem;
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__img {

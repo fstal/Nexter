@@ -18,6 +18,16 @@
   grid-template-columns: minmax(min-content, max-content);
   justify-content: center;
 
+  //prettier-ignore
+  @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+      }
+
+  //prettier-ignore
+  @media only screen and (max-width: $bp-small) {
+      padding: 5rem;
+    }
+
   &__logo {
     justify-self: center;
     height: 3rem;
