@@ -177,7 +177,6 @@ body {
         margin: 3rem 0; } }
     @media only screen and (max-width: 37.5em) {
       .realtors__list {
-        padding: 5rem;
         grid-template-columns: min-content max-content; } }
   .realtors__img {
     width: 7rem;
@@ -195,6 +194,12 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
   align-items: start; }
+  @media only screen and (max-width: 75em) {
+    .features {
+      margin: 12rem 0; } }
+  @media only screen and (max-width: 50em) {
+    .features {
+      margin: 10rem 0; } }
 
 .feature {
   display: grid;

@@ -3,6 +3,14 @@
 
   margin: 15rem 0;
 
+  @media only screen and (max-width: $bp-largest) {
+    margin: 12rem 0;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 10rem 0;
+  }
+
   display: grid;
   //grid-template-columns: repeat(3, 1fr);
   // Auto fit creates as many columns as can fit with our defined width
