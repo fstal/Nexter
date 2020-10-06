@@ -10,6 +10,10 @@
   display: flex;
   justify-content: space-evenly;
 
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
   &__link:link,
   &__link:visited {
     text-decoration: none;
@@ -17,6 +21,7 @@
     font-family: $font-display;
     font-size: 1.6rem;
     text-transform: uppercase;
+    text-align: center;
     display: block;
     padding: 1.5rem;
     transition: all 0.2s;

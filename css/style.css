@@ -404,12 +404,16 @@ body {
   padding: 6rem 0;
   display: flex;
   justify-content: space-evenly; }
+  @media only screen and (max-width: 37.5em) {
+    .nav {
+      flex-direction: column; } }
   .nav__link:link, .nav__link:visited {
     text-decoration: none;
     color: #fff;
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.6rem;
     text-transform: uppercase;
+    text-align: center;
     display: block;
     padding: 1.5rem;
     transition: all 0.2s; }
